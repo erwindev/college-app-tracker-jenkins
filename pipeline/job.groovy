@@ -9,7 +9,6 @@ config.services.each { name, data ->
   createBuildJob(data, global)
 }
 
-
 def createBuildJob(data, global_config){
 	pipelineJob("${data.job_name}"){
 	    definition {
